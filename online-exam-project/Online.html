@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="Online.css" />
+        <script type="text/javascript" src="Online.js"></script>
+    </head>
+<body onload="loadQuestion()">
+      <p class="title">Online Exam @ Hexaware</p>
+      <div class="MainForm" align="Left">
+         <form name="ExamForm">
+            <p id="Question"></p>
+             <input type="radio" name="onlineExam" id="Opt1" onclick="AnsweerChoosed(1)"  />
+             <label id="Option0">1st Option</label><br/>
+             <input type="radio" name="onlineExam" id="Opt2" onclick="AnsweerChoosed(2)" />
+             <label id="Option1">2nd Option</label><br/>
+             <input type="radio" name="onlineExam" id="Opt3" onclick="AnsweerChoosed(3)" />
+             <label id="Option2">3rd Option</label><br/>
+             <input type="radio" name="onlineExam" id="Opt4" onclick="AnsweerChoosed(4)" />
+             <label id="Option3">4th Option</label><br/><br/>
+             <br/>
+             <input type="button" value="Next Question" onclick="nextQuestion()" />
+
+        </form>
+      </div>
+</body>
+</html>
