@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+              var res="";
+                var myArray = 
+                    new Array("Rohan","Gopala","Ajay","Monisha","Keerthika");
+                const show = () => {
+                    myArray.forEach(x => {
+                        res +=x + "       ";
+                        console.log(x);
+                    })
+                    document.getElementById("result").innerHTML = res;
+                }
+        </script>
+    </head>
+<body onload="show()">
+    <span id="result"></span>
+</body>
+</html>

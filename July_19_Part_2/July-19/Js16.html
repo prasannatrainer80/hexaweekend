@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            const sum = (a, b) => {
+               var res = a + b;
+               document.getElementById("result").innerHTML = res;
+            }
+
+            const sub = (a,b) => {
+                var res = a - b;
+                document.getElementById("result").innerHTML = res;
+            }
+
+            const mult = (a,b) => {
+                var res = a * b;
+                document.getElementById("result").innerHTML = res;
+            }
+        </script>
+    </head>
+<body>
+   <input type="button" value="Sum" onclick="sum(12,5)" /> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="button" value="Sub" onclick="sub(12,5)" /> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="button" value="Mult" onclick="mult(12,5)" />
+   <br/>
+   <span id="result"></span>
+</body>
+</html>
