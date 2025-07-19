@@ -1,0 +1,133 @@
+Web Application : These are the applications, that which are to be called from various places rather than where they are created. 
+
+If you want to make any distributed or robust applications, then 
+we need the help of web applications. 
+
+You can create web applications in 2 ways as 
+
+(i) Scripting Languages
+
+(ii) Programming Languages 
+
+*** Scripting Languages are languages, that which are interpreted, 
+during runtime they takes lot of time to execute... Programming languages are langauges, that which are compiled first, during runtime they takes very less time to execute ***
+
+In Web applications, we can implement both 
+
+(i) Client-Side Scripting
+
+	Enables you to access the application from the same system.
+	No Network traffic
+	Execution will be faster 
+
+(ii) Server-Side scripting 
+
+	Enables you to access the application from the Server
+	Network traffic is high
+	A bit slower 
+
+*** Any intranet based application w.r.t. No Security, please opt for Client-Side scripting ***
+
+*** Any internet based application w.r.t. Min. Security, please opt for both client-side/server-side scripting ***
+
+*** Any internet based application w.r.t. High Security, Please opt for Server-Side Scrpting ***
+
+_______________________________________________________________
+
+HTML (HyperText Markup Language) 
+
+which allows you to create any sample web pages. 
+
+You can start with HTML, by using 
+
+<html>
+</html> 
+
+<head>
+</head> : Used to define the global content for the given page. 
+
+<title> </title> : Used to display heading on title bar. 
+
+<body> </body> : Contains the actual code for the given page. 
+
+<p> : Used to start new paragraph </p> 
+
+Definition Language (DL) : 
+
+<dl>
+</dl>
+
+<dt> </dt> : Definition Term
+<dd> </dd> : Definition Description
+
+To place an image, we need to use tag as 
+
+<img /> : 
+
+<img src=Image_name height width /> 
+
+Anchor Tag : Used to link to the internal or external pages
+
+<a href="target_page">Display Text</a>
+
+<ol>
+</ol> : Used to make list of items. 
+
+You can define the list items, by using 
+
+<li> </li> 
+
+
+<ol type="1">
+</ol>
+
+<ul> : Unordered List
+
+disc
+circle
+square 
+
+Forms : Allows you to accept the input from the keyboard. 
+
+You can define a form, as
+
+<form name="form_name">
+</form>
+
+<input type="number" /> 
+
+<input type="text" /> 
+
+<input type="button" />
+
+<input type="submit" /> 
+
+<input type="password" /> 
+
+Tables allows you to display data w.r.t. Rows and Columns format. You can define table(s) by using
+
+<table> 
+</table> 
+
+<tr>
+</tr> : Used to add new row to the given table. 
+
+<th>
+</th> : Used to add heading to the table cell. 
+
+<td>
+</td> : Used to add data to the table cell. 
+
+CSS (Cascading Style Sheet) : Allows you to define look and feel for the given HTML document. 
+
+There are various types of CSS as
+
+(i) inline : To be defined in the style property of the tag. 
+
+(ii) internal : To be defined in <style> tag of <head> section 
+
+(iii) external : create a css file and call in multiple html pages. 
+
+
+
+
