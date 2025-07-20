@@ -1,0 +1,60 @@
+React is a free open-source front end javascript library used to develop various interactive user-interfaces.  It is simple, feature rich and component based UI library.  When we say component based, we mean that react develops applications by creating various reusable and independent codes. 
+
+If you want to make rich web based enterprise applications, then we need the help of react. 
+
+React allows you to create small to big complex applications, provides minimal and solid features set to implement robust applications. 
+
+Features : 
+___________
+
+1) Comonent-Based : React is all about components, as any code to be written must be in component, these components can be called as HTML tags. These components are independent and have their own logic which makes them reusable throughout the development process. 
+
+2) Better and Faster Performance : React us virtual DOM, when you run react application first time entire data to be stored in DOM, then when you run second time, this virtual dom compares the old data (vs) new data and only new data changes makes getting rendered. This improves the performance of the given application.  
+
+3) Flexible : React allows developers to set their own conventions as we can reuse the code in easiest and efficient way. 
+
+4) Integartion with API : React allows you to integrate JSON data in your given application. 
+
+5) Develops Mobile Applciations as Well : You can migrate web applications w.r.t. Mobile Apps. React can also develop mobile applications using React native. 
+
+6) One-way Binding : One way binding prevents the data in component to flow backward. The data cannot be passed by a component to its parent component in any situation. This will simplify the data handling an reduce the complexity. 
+
+You can implement one-way databinding using {}. 
+
+7) Scalable : React can be used to create application of any size. 
+
+8) Flexible : React only provides few basic concept to create truly scalable application. 
+
+React Components : 
+
+React support reusable components, where we can call these components in entire project.  
+
+There are 2 types of components in react as 
+
+1) Functional Components
+
+2) Class Components 
+
+Functional components are following the javascript syntax, 
+
+class components follows the programmatic syntax,
+
+but now a days we are preferring functional components. 
+
+React Props are arguments passed into React components. 
+
+Props are passed to components via html attributes. 
+
+React Hooks are new feature introduced in React allows you to use state and other react features without writing a class. 
+
+Hooks are functions in which Reaect state and lifecycle features from function components.
+
+Hooks are similar to javascript functions but you need to follow these two rules when using them.  Hooks rule ensures that all the stateful logic in component visible to source code.
+
+1) useState : Used to maintain the state of the given control. 
+
+2) useEffect : It is similar to componentWillMount()/componentDidMount() in class components. 
+
+
+
+
