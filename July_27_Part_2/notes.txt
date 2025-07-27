@@ -1,0 +1,80 @@
+Introduction to Redux(Action, Reducers and store) 
+
+Redux is a state management library used in javascript apps. 
+
+It manages the state of your application. 
+
+There are 3 principles of react as 
+
+(i) Single Source of truth : It helps to create universal apps, the state of application stored in object called store, 
+
+(ii) State is read-only (Immutable) : We cannot change the object state directly, we need to recalculate the new app state and update it with our newly created object.  And this is important because all the changes are happening in the same place so everything is needed to be done in strict order and one by one. 
+
+(iii) Changes are made with pure functions (reducers) 
+
+	Reducers are pure functions that take prev state and action and return the new state. 
+
+Building Parts of redux : 
+__________________________
+
+1) Actions : Actions are plain javascript object that contains information. Actions are the only source that information for the store, Actions have type field that tells what kind of action to perform and all other fields contain information or data. Actions are information objects and action createor are functions. 
+
+syntax : 
+_________
+
+function addCustomer(task) {
+	return {
+	   type : 'ADD_CUSTOMER',
+	   task
+ 	}
+}
+
+function removeCustomer(task) {
+	return {
+	   type : 'REMOVE_CUSTOMER',
+	   task
+	}
+}
+
+function updateCustomer(task) {
+	return {
+	   type : 'UPDATE_CUSTOMER',
+	   task
+	}
+}	
+
+2) Reducers : Actions only tell what do do, but what operations to be performed we need to specify in reducers. 
+Reducers are pure functions that take the current state and action and return the new state and tell the store how to do. 
+
+function task(tasks = [], action) {
+	if (action.type="ADD_CUSTOMER") {
+	   return [...tasks, action.task];
+	} else if (action.type == "REMOVE_CUSTOMER) {
+	    return [...tasks, action.task]
+	}
+	return tasks;
+}
+
+In Reducer, we create a function with 2 args, first is current state and next is the action what to be performed. 
+
+3) Store : The store is an object used to combine all the reducers. Store object stores holds the state of application. 
+
+In Store, we have various methods as
+
+createStore() : To Create a Store
+
+dispatch(action) : To change the state
+
+getState() : for getting current state of store. 
+
+import {createStore} from 'Redux'
+
+const store = createStore(tasks);
+
+const add = addCustomer('ADD CUSTOMER');
+
+store.dispatch(add);
+
+
+
+
